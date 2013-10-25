@@ -169,6 +169,8 @@ namespace dynamicgraph
     template <typename S>
     static void setDefault(S& s)
     {
+      sot::Trajectory aTrajectory;
+      s.setConstant(aTrajectory);
     }
   };
 

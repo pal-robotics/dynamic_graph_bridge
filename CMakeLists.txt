@@ -26,7 +26,7 @@ find_package(Boost REQUIRED COMPONENTS program_options)
 
 add_message_files(FILES Matrix.msg Vector.msg)
 
-add_service_files(FILES  RunCommand.srv)
+add_service_files(FILES  RunCommand.srv RunPythonFile.srv)
 
 generate_messages(
   DEPENDENCIES std_msgs

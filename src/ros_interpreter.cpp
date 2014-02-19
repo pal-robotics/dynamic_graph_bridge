@@ -40,6 +40,7 @@ namespace dynamicgraph
   (dynamic_graph_bridge::RunPythonFile::Request& req,
    dynamic_graph_bridge::RunPythonFile::Response& res)
   {
+      std::cout << "RunPythonFile called" << std::endl;
     interpreter_.runPythonFile(req.input);
     res.result = "File parsed"; // FIX: It is just an echo, is there a way to have a feedback?
     return true;
@@ -54,6 +55,7 @@ namespace dynamicgraph
   }
 
   void Interpreter::runPythonFile( std::string ifilename ){
+      std::cout << "loading python file: " << ifilename << std::endl;
       interpreter_.runPythonFile(ifilename);
   }
 

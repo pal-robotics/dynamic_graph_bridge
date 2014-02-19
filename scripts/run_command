@@ -92,7 +92,8 @@ if __name__ == '__main__':
             sys.exit(1)
 
         response = sh.scriptClient(infile)
-        if not response:
+        print('script is getting executed')
+	if not response:
             print("Error while file parsing ")
     else:
         sh.interact("Interacting with remote server.")

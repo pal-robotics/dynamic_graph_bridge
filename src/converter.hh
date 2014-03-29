@@ -10,8 +10,8 @@
 # include <ros/time.h>
 # include <std_msgs/Header.h>
 
-# include <LinearMath/btMatrix3x3.h>
-# include <LinearMath/btQuaternion.h>
+# include <bullet/LinearMath/btMatrix3x3.h>
+# include <bullet/LinearMath/btQuaternion.h>
 
 # define SOT_TO_ROS_IMPL(T)						\
   template <>								\

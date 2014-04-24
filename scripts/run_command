@@ -74,12 +74,11 @@ class RosShell(InteractiveConsole):
 if __name__ == '__main__':
     sys.argv = rospy.myargv()
     import optparse
-    manifest = roslib.manifest.load_manifest('dynamic_graph_bridge')
     rospy.init_node('run_command', argv=sys.argv)
 
     parser = optparse.OptionParser(
         usage='\n\t%prog [options]',
-        version='%%prog %s' % manifest.version)
+        version='%%prog %s' % 0)
     (options, args) = parser.parse_args(sys.argv[1:])
 
     sh = RosShell()
